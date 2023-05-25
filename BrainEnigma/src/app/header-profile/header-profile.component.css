@@ -1,0 +1,55 @@
+div.header_btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 0px 20px;
+    cursor: pointer;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(/assets/profil/profil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile:hover .username {
+    text-decoration: underline;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+nav svg {
+    width: 5em;
+}
+
+.btn_home_fond {
+    width: 88px;
+    height: 86px;
+    margin: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #882000;
+    box-shadow: 0px 6px 1px #330C00;
+}
+
+.btn_home_fond svg {
+    width: 55px;
+    height: 53px;
+    fill: #FFDBD1;
+}
