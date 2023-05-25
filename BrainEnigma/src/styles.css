@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: auto; }
+
+*::-webkit-scrollbar {
+	width: 13px;
+}
+
+body { 
+    margin: 0; 
+    font-family: bebas, TangoSans, Roboto;
+    background-color: #201A18; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none; 
+}
+
+button {
+    font-family: bebas;
+    font-size: 35px;
+    border-radius: 5px;
+    width: 201px;
+    height: 67px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

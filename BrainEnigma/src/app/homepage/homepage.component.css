@@ -1,0 +1,137 @@
+div.header_btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(/assets/profil/profil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile:hover .username {
+    text-decoration: underline;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+div.boutonConnexion {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 27px;
+}
+
+button.btn_log_in {
+    color: #FFDBD1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #882000;
+    box-shadow: 0px 6px 1px #330C00;
+}
+
+button.btn_sign_up {
+    color: #5A1C00;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #FFB5A1;
+    box-shadow: 0px 6px 1px #420E00;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+div.main img {
+    height: 4em;
+    width: 4em;
+    margin: -2.2em 0 -0.5em 0;
+    font-size: 100px;
+    font-family: bebas;
+    color: white;
+}
+
+/* @keyframes anim {
+    0%{
+
+    }
+    100%{
+
+    }
+} */
+
+div.main_btn {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+}
+
+div.main_btn * {
+    width: 544px;
+    height: 97px;
+    margin: 5%;
+}
+
+button.btn_start {
+
+    color: #F6E1A6;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #534619;
+    box-shadow: 0px 6px 1px #332B0F;
+}
+
+button.btn_stat {
+    color: #3B2F05;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #D9C58D;
+    box-shadow: 0px 6px 1px #2E260F;
+}
+
+button.btn_contact {
+    color: #FFDBD1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #5D4038;
+    box-shadow: 0px 6px 1px #2D1F1B;
+}
+
+/* Styles pour les écrans de petite taille (par exemple, smartphones) */
+@media (max-width: 600px) {
+    button {
+        font-size: 25px;
+        /* Réduire la taille de la police pour les petits écrans */
+        width: 150px;
+        /* Réduire la largeur minimale du bouton pour les petits écrans */
+        height: 50px;
+        /* Réduire la hauteur minimale du bouton pour les petits écrans */
+
+    }
+
+    div.boutonHome {
+        padding: 10px;
+        gap: 10px;
+        /* Réduire l'espacement entre les boutons */
+    }
+}
