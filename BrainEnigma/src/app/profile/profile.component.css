@@ -1,7 +1,94 @@
-h1{
+.btn_home_fond {
+    width: 88px;
+    height: 86px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #882000;
+    box-shadow: 0px 6px 1px #330C00;
+    position: absolute;
+    width: 88px;
+    height: 86px;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+}
+
+.btn_home_fond svg {
+    width: 55px;
+    height: 53px;
+    fill: #FFDBD1;
+}
+
+div.profile_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 50px;
+    z-index: 1;
+}
+
+h1 {
     color: white;
+    font-family: bebas, Arial, Helvetica, sans-serif;
+    font-size: 60px;
 }
 
 a {
     color: white;
+    font-family: bebas, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration-line: underline;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(/assets/profil/profil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.show_profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+div.modif_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+div.modif_input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+}
+
+input {
+    width: 300px;
+    height: 45px;
+    background: #EBEBEB;
+    box-shadow: 0px 7px 15px 4px rgba(0, 0, 0, 0.37);
+    border-radius: 7px;
+    padding-left: 8px;
+}
+
+.btn_modif {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+}
+
+.btn_validate {
+    color: #F6E1A6;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #534619;
+    box-shadow: 0px 6px 1px #2F280E;
 }

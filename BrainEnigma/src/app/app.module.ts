@@ -9,6 +9,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { ChooseComponent } from './choose/choose.component';
 import { ChooseDifficultyComponent } from './choose-difficulty/choose-difficulty.component';
 import { HeaderProfileComponent } from './header-profile/header-profile.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { HeaderProfileComponent } from './header-profile/header-profile.componen
     ProfileComponent,
     ChooseComponent,
     ChooseDifficultyComponent,
-    HeaderProfileComponent
+    HeaderProfileComponent,
+    SignUpComponent,
+    LogInComponent,
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

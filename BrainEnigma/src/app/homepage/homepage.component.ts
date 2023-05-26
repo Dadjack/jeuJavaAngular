@@ -10,16 +10,28 @@ export class HomepageComponent {
 
   constructor(private router: Router) {}
 
- goToProfile() {
-  this.router.navigate(['profile']);
-}
-
 goToHome() {
   this.router.navigate(['/']);
 }
 
+goToProfile() {
+  this.router.navigate(['profile']);
+}
+
+goToLogIn() {
+  this.router.navigate(['logIn']);
+}
+
+goToSignUp() {
+  this.router.navigate(['signUp']);
+}
+
 goToChoose() {
   this.router.navigate(['choose']);
+}
+
+goToContact() {
+  this.router.navigate(['contact']);
 }
 
 }

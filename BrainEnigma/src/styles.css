@@ -36,3 +36,13 @@ button {
     align-items: center;
     justify-content: center;
 }
+
+input {
+    font-family: tangoSans;
+    padding-left: 8px;
+}
+
+textarea {
+    font-family: tangoSans;
+    padding: 8px;
+}
