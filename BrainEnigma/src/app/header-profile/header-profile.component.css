@@ -36,7 +36,7 @@ div.header_btn {
     color: white;
 }
 
-.btn_home_fond {
+#btn_home_fond {
     width: 88px;
     height: 86px;
     margin: 20px;
@@ -45,7 +45,7 @@ div.header_btn {
     --box-shadow-color: #330C00;
 }
 
-.btn_home_fond svg {
+#btn_home_fond svg {
     width: 55px;
     height: 53px;
     fill: #FFDBD1;
