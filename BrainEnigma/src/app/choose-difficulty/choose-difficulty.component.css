@@ -28,26 +28,30 @@ div.main_btn * {
     margin: 3%;
 }
 
-button.btn_easy {
+#btn_easy {
     color: #F6E1A6;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #534619;
-    box-shadow: 0px 6px 1px #332B0F;
+    box-shadow: 0px 6px 1px #2E260E;
+    --box-shadow-color: #2E260E;
 }
 
-button.btn_medium {
+#btn_medium {
     color: #534619;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #D9C58D;
     box-shadow: 0px 6px 1px #332B0F;
+    --box-shadow-color: #332B0F;
 }
 
-button.btn_hard {
+#btn_hard {
     color: #690005;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #FFB5A1;
-    box-shadow: 0px 6px 1px #330003;
+    box-shadow: 0px 6px 1px #470800;
+    --box-shadow-color: #470800;
 }
 
-button.btn_very_hard {
+#btn_very_hard {
     color: #FFDAD6;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #93000A;
     box-shadow: 0px 6px 1px #330003;
+    --box-shadow-color: #330003;
 }

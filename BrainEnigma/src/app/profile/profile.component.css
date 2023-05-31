@@ -90,8 +90,9 @@ input {
     height: 45px;
 }
 
-.btn_validate {
+#btn_validate {
     color: #F6E1A6;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #534619;
     box-shadow: 0px 6px 1px #2F280E;
+    --box-shadow-color: #2E260F;
 }
