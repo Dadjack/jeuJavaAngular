@@ -37,7 +37,6 @@ div.header_btn {
 }
 
 div.boutonConnexion {
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,16 +44,18 @@ div.boutonConnexion {
     gap: 27px;
 }
 
-button.btn_log_in {
+#btn_log_in {
     color: #FFDBD1;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #882000;
     box-shadow: 0px 6px 1px #330C00;
+    --box-shadow-color: #330C00;
 }
 
-button.btn_sign_up {
+#btn_sign_up {
     color: #5A1C00;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #FFB5A1;
     box-shadow: 0px 6px 1px #420E00;
+    --box-shadow-color: #420E00;
 }
 
 div.main {
@@ -73,15 +74,6 @@ div.main img {
     color: white;
 }
 
-/* @keyframes anim {
-    0%{
-
-    }
-    100%{
-
-    }
-} */
-
 div.main_btn {
     width: auto;
     height: auto;
@@ -98,23 +90,28 @@ div.main_btn * {
     margin: 5%;
 }
 
-button.btn_start {
+#btn_start {
 
     color: #F6E1A6;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #534619;
     box-shadow: 0px 6px 1px #332B0F;
+    --box-shadow-color: #332B0F;
 }
 
-button.btn_stat {
+#btn_stat {
     color: #3B2F05;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #D9C58D;
     box-shadow: 0px 6px 1px #2E260F;
+    --box-shadow-color: #2E260F;
+
 }
 
-button.btn_contact {
+#btn_contact {
     color: #FFDBD1;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #5D4038;
     box-shadow: 0px 6px 1px #2D1F1B;
+    --box-shadow-color: #2D1F1B;
+
 }
 
 /* Styles pour les écrans de petite taille (par exemple, smartphones) */

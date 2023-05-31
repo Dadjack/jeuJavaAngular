@@ -9,7 +9,7 @@ div.header_btn {
 .profile {
     display: flex;
     align-items: center;
-    padding: 20px 20px 0px 20px;
+    padding: 20px;
     cursor: pointer;
 }
 
@@ -42,6 +42,7 @@ div.header_btn {
     margin: 20px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #882000;
     box-shadow: 0px 6px 1px #330C00;
+    --box-shadow-color: #330C00;
 }
 
 .btn_home_fond svg {
