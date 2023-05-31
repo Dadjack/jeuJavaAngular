@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ButtonAnimationService } from '../button-animation.service';
+
 
 @Component({
   selector: 'homepage',
@@ -8,30 +10,39 @@ import { Router } from '@angular/router';
 })
 export class HomepageComponent {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
-goToHome() {
-  this.router.navigate(['/']);
-}
+  goToHome() {
+    setTimeout(() => {
+      this.router.navigate(['/']);
+    }, 500);
+  }
 
-goToProfile() {
-  this.router.navigate(['profile']);
-}
+  goToProfile() {
+    this.router.navigate(['profile']);
+  }
 
-goToLogIn() {
-  this.router.navigate(['logIn']);
-}
+  goToLogIn() {
+    setTimeout(() => {
+    this.router.navigate(['logIn']);
+    }, 500);
+  }
 
-goToSignUp() {
-  this.router.navigate(['signUp']);
-}
+  goToSignUp() {
+    setTimeout(() => {
+    this.router.navigate(['signUp']);
+    }, 500);
+  }
 
-goToChoose() {
-  this.router.navigate(['choose']);
-}
+  goToChoose() {
+    setTimeout(() => {
+    this.router.navigate(['choose']);
+    }, 500);
+  }
 
-goToContact() {
-  this.router.navigate(['contact']);
-}
-
-}
+  goToContact() {
+    setTimeout(() => {
+    this.router.navigate(['contact']);
+    }, 500);
+  }
+}  

@@ -1,15 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: auto; }
-
-*::-webkit-scrollbar {
-	width: 13px;
+html,
+body {
+    height: auto;
 }
 
-body { 
-    margin: 0; 
+*::-webkit-scrollbar {
+    width: 13px;
+}
+
+body {
+    margin: 0;
     font-family: bebas, TangoSans, Roboto;
-    background-color: #201A18; 
+    background-color: #201A18;
 }
 
 * {
@@ -20,7 +21,7 @@ body {
     font-size: 1em;
     font-weight: normal;
     font-style: normal;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 button {
@@ -37,6 +38,43 @@ button {
     justify-content: center;
 }
 
+button:hover {
+    filter: brightness(1.1);
+}
+
+.btn_anim:active {
+    animation: btn-3d-animation 0.7s;
+    animation-fill-mode: both;
+}
+
+@keyframes btn-3d-animation {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0px 6px 1px var(--box-shadow-color);
+    }
+
+    25% {
+        transform: translateY(3px);
+        box-shadow: 0 3px 1px var(--box-shadow-color);
+    }
+
+    50% {
+        transform: translateY(6px);
+        box-shadow: 0 0px 1px var(--box-shadow-color);
+    }
+
+    75% {
+        transform: translateY(3px);
+        box-shadow: 0 3px 1px var(--box-shadow-color);
+    }
+
+    100% {
+        transform: translateY(0);
+        box-shadow: 0px 6px 1px var(--box-shadow-color);
+
+    }
+}
+
 input {
     font-family: tangoSans;
     padding-left: 8px;
@@ -46,3 +84,4 @@ textarea {
     font-family: tangoSans;
     padding: 8px;
 }
+
