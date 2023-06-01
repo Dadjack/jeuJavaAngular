@@ -103,7 +103,6 @@ div.main_btn * {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #D9C58D;
     box-shadow: 0px 6px 1px #2E260F;
     --box-shadow-color: #2E260F;
-
 }
 
 #btn_contact {
@@ -111,7 +110,6 @@ div.main_btn * {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #5D4038;
     box-shadow: 0px 6px 1px #2D1F1B;
     --box-shadow-color: #2D1F1B;
-
 }
 
 /* Styles pour les écrans de petite taille (par exemple, smartphones) */
