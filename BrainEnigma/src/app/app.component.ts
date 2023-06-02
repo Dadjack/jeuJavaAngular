@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ButtonAnimationService } from './button-animation.service';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +8,8 @@ import { ButtonAnimationService } from './button-animation.service';
 export class AppComponent implements OnInit {
   title = 'BrainEnigma';
   
-  constructor(private buttonAnimationService: ButtonAnimationService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.buttonAnimationService.applyButtonAnimation();
   }
 }

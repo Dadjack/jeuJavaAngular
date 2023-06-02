@@ -1,4 +1,4 @@
-.btn_home_fond {
+#btn_home_fond {
     width: 88px;
     height: 86px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #882000;
@@ -11,7 +11,7 @@
     z-index: 2;
 }
 
-.btn_home_fond svg {
+#btn_home_fond svg {
     width: 55px;
     height: 53px;
     fill: #FFDBD1;

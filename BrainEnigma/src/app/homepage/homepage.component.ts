@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ButtonAnimationService } from '../button-animation.service';
 import { AnimationBuilder, animate, keyframes, style } from '@angular/animations';
 
 @Component({
@@ -10,34 +9,58 @@ import { AnimationBuilder, animate, keyframes, style } from '@angular/animations
 })
 export class HomepageComponent implements OnInit {
 
-  constructor(private router: Router, private buttonAnimationService: ButtonAnimationService, private animationBuilder: AnimationBuilder) { }
+  constructor(private router: Router, private animationBuilder: AnimationBuilder) { }
 
   ngOnInit() {
     this.applyButtonAnimationToAllButtons();
   }
 
   private applyButtonAnimationToAllButtons() {
+
     const buttons = document.querySelectorAll('.btn_anim');
+
     buttons.forEach((button: Element) => {
-      const animation = this.animationBuilder.build([
-        style({ transform: 'translateY(0)', boxShadow: '0px 6px 1px var(--box-shadow-color)' }),
+      const animationClicked = this.animationBuilder.build([
+        animate('0.2s', keyframes([
+          style({ transform: 'translateY(0) scale(1.03)', boxShadow: '0px 6px 1px var(--box-shadow-color)' }),
+          style({ transform: 'translateY(3px) scale(1.03)', boxShadow: '0px 3px 1px var(--box-shadow-color)' }),
+          style({ transform: 'translateY(6px) scale(1.03)', boxShadow: '0px 0px 1px var(--box-shadow-color)' }),
+          style({ transform: 'translateY(3px) scale(1.03)', boxShadow: '0px 3px 1px var(--box-shadow-color)' }),
+          style({ transform: 'translateY(0) scale(1.03)', boxShadow: '0px 6px 1px var(--box-shadow-color)' }),
+        ]))
+      ]);
+
+      const animationHoverUp = this.animationBuilder.build([
         animate('0.2s', keyframes([
           style({ transform: 'translateY(0)', boxShadow: '0px 6px 1px var(--box-shadow-color)' }),
-          style({ transform: 'translateY(3px)', boxShadow: '0px 3px 1px var(--box-shadow-color)' }),
-          style({ transform: 'translateY(6px)', boxShadow: '0px 0px 1px var(--box-shadow-color)' }),
-          style({ transform: 'translateY(3px)', boxShadow: '0px 3px 1px var(--box-shadow-color)' }),
+          style({ transform: 'translateY(0) scale(1.03)', boxShadow: '0px 6px 1px var(--box-shadow-color)' }),
+        ]))
+      ]);
+
+      const animationHoverDown = this.animationBuilder.build([
+        animate('0.2s', keyframes([
+          style({ transform: 'translateY(0) scale(1.03)', boxShadow: '0px 6px 1px var(--box-shadow-color)' }),
           style({ transform: 'translateY(0)', boxShadow: '0px 6px 1px var(--box-shadow-color)' }),
         ]))
       ]);
 
       button.addEventListener('click', () => {
-        const player = animation.create(button);
+        const player = animationClicked.create(button);
         player.play();
       });
 
-      this.buttonAnimationService.addButton(button as HTMLButtonElement);
+      button.addEventListener('mouseenter', () => {
+        const playerHoverUp = animationHoverUp.create(button);
+        playerHoverUp.play();
+      });
+
+      button.addEventListener('mouseleave', () => {
+        const playerHoverDown = animationHoverDown.create(button);
+        playerHoverDown.play();
+      });
     });
   }
+
 
   goToHome() {
     setTimeout(() => {
@@ -72,4 +95,8 @@ export class HomepageComponent implements OnInit {
       this.router.navigate(['contact']);
     }, 300);
   }
+}
+
+function addClickAnimation(event: Event | undefined, MouseEvent: { new(type: string, eventInitDict?: MouseEventInit | undefined): MouseEvent; prototype: MouseEvent; }) {
+  throw new Error('Function not implemented.');
 }

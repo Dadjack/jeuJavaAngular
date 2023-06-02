@@ -50,3 +50,14 @@ div.header_btn {
     height: 53px;
     fill: #FFDBD1;
 }
+
+#btn_home_fond svg {
+    width: 55px;
+    height: 53px;
+    fill: #FFDBD1;
+}
+
+/* #btn_home_fond svg:hover {
+    width: 55px;
+    height: 53px;
+} */

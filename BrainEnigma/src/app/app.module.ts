@@ -13,7 +13,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ButtonAnimationService } from './button-animation.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,7 @@ import { ButtonAnimationService } from './button-animation.service';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [ButtonAnimationService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
